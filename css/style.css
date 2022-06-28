@@ -1,0 +1,98 @@
+/* Global settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 0px;
+}
+
+/* Mobile */
+main {
+  margin: auto;
+}
+
+main {
+  align-items: center;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  margin: 0 20px;
+  max-width: 400px;
+  overflow: hidden;
+  padding: 30px;
+  text-align: center;
+}
+
+.advice-box,
+.advice-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.advice-text h1 {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.8rem;
+}
+
+.advice-text h1:before{ 
+  content: open-quote;
+ }
+
+.advice-text h1:after { 
+  content: close-quote;
+}
+
+.advice-text h2 {
+  color: hsl(150, 100%, 66%);
+  font-size: .7rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.advice-divider img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* .dice {
+  background-color: hsl(150, 100%, 66%);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 30px;
+  margin: 0 auto -50px;
+  width: 30px;
+}
+
+.dice img {
+  /* vertical-align: middle; 
+}*/
+
+#dice{
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  padding: 15px 16px 12px;
+  border: 0;
+  cursor: pointer;
+  margin: 0 auto -50px;
+}
+#dice img{
+  width: 23px;
+}
+#dice:hover {
+  box-shadow: 0 0 40px hsl(150, 100%, 66%);
+}
