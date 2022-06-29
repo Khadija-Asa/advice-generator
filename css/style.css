@@ -10,30 +10,23 @@
 }
 
 body {
-  background-color: hsl(218, 23%, 16%);
-  display: grid;
-  height: 100vh;
-  grid-template-rows: auto 0px;
-}
-
-/* Mobile */
-main {
-  margin: auto;
-}
-
-main {
   align-items: center;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* Mobile & Tablet */
+main {
   background-color: hsl(217, 19%, 24%);
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  height: fit-content;
-  justify-content: center;
   margin: 0 20px;
   max-width: 400px;
-  overflow: hidden;
-  padding: 30px;
+  padding: 40px;
   text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .advice-box,
@@ -68,31 +61,25 @@ main {
   width: 100%;
 }
 
-/* .dice {
+.dice {
   background-color: hsl(150, 100%, 66%);
-  border: 0;
   border-radius: 50%;
+  padding: 20px 20px 17px;
+  border: 0;
   cursor: pointer;
-  height: 30px;
-  margin: 0 auto -50px;
-  width: 30px;
+  margin: 0 auto -70px;
 }
 
 .dice img {
-  /* vertical-align: middle; 
-}*/
-
-#dice{
-  background-color: hsl(150, 100%, 66%);
-  border-radius: 50%;
-  padding: 15px 16px 12px;
-  border: 0;
-  cursor: pointer;
-  margin: 0 auto -50px;
+  width: 28px;
 }
-#dice img{
-  width: 23px;
-}
-#dice:hover {
+.dice:hover {
   box-shadow: 0 0 40px hsl(150, 100%, 66%);
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  main {
+    max-width: 600px;
+  }
 }
